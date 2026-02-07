@@ -31,7 +31,7 @@ jobs:
 
       - name: Run ESLint
         working-directory: ./server
-        run: npm run lint
+        run: npm run lint -- --max-warnings 0
 
       - name: Check Prettier formatting
         working-directory: ./server
